@@ -11,9 +11,9 @@ driver.find_element(By.LINK_TEXT, "Uncharted").click()
 time.sleep(3)
 
 star = driver.find_element(By.CLASS_NAME, "title-data-info-item-list")
-d = driver.find_element(By.CLASS_NAME, "title-info-synopsis")
+desc = driver.find_element(By.CLASS_NAME, "title-info-synopsis")
 print(star.text)
-print(d.text)
+print(desc.text)
 
 videos = driver.find_element(By.CLASS_NAME, "additional-video-image-wrapper").click()
 time.sleep(500)
